@@ -7,8 +7,9 @@ and you may not use the same element twice.
 You can return the answer in any order.
 """
 """
- geliştirme için targetin hangi değerler aralığında olduğuna bakıp len(nums)'ı
-kısıtlayabiliriz. veya
+ Gelistirme icin targetin hangi degerler araliginda olduguna bakip len(nums)'i
+ona gore degistirebiliriz(bu sadece sirali dizilerde mi gecerli?). veya
+   
 
 """
 
@@ -38,9 +39,7 @@ def twoSum(self, nums, target):
     nums = x  # [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
     self = []
-    for i in range(0, len(nums)):
-        if nums[i] < target < nums[i + 1]:
-            length = i
+
     for i in range(0, len(nums)):
         for j in range(i + 1, len(nums)):
             if nums[i] + nums[j] == target:
@@ -51,4 +50,4 @@ def twoSum(self, nums, target):
     print(self)
 
 
-twoSum([], [], 34)
+twoSum([], [], 76)
