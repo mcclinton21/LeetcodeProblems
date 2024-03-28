@@ -50,4 +50,4 @@ def twoSum(self, nums, target):
     print(self)
 
 
-twoSum([], [], 76)
+twoSum([], [], 36)
