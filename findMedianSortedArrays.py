@@ -6,7 +6,7 @@ return the median of the two sorted arrays.
  The overall run time complexity should be O(log (m+n)).
 """
 #binary search'e gore kodu degistir.
-#
+#kumeleri parametre olarak verince (O(m+n) log (m+n))
 
 def find_median_sorted_array(nums1, nums2):
 
