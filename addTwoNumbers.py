@@ -21,19 +21,19 @@ Output: [8,9,9,9,0,0,0,1]
 """
 
 
-def addTwoNumbers(l1, l2):
+def add_two_numbers(l1, l2):
     # Equalizing length of lists:
 
     length1 = len(l1)
     length2 = len(l2)
 
     if length1 != length2:
-        diffDigit = abs(length1 - length2)
+        diff_digit = abs(length1 - length2)
         if length1 > length2:
-            for i in range(0, diffDigit):
+            for i in range(0, diff_digit):
                 l2.insert(0, 0)
         else:
-            for i in range(0, diffDigit):
+            for i in range(0, diff_digit):
                 l1.insert(0, 0)
 
     index = length1 - 1
@@ -61,4 +61,4 @@ def addTwoNumbers(l1, l2):
     print(self)
 
 
-addTwoNumbers([2, 3, 5, 1], [8 , 9, 9, 9])
+add_two_numbers([2, 3, 5, 1], [8 , 9, 9, 9])

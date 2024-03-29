@@ -13,22 +13,22 @@ ona gore degistirebiliriz(bu sadece sirali dizilerde mi gecerli?). veya
 
 """
 
-def findFibonacci(number):
-    fibonacciNumbers = [0, 1]
+def find_fibonacci(number):
+    fibonacci_numbers = [0, 1]
     for i in range(2, number):
-        x = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2]
-        fibonacciNumbers.insert(i, x)
-    return fibonacciNumbers
+        x = fibonacci_numbers[i - 1] + fibonacci_numbers[i - 2]
+        fibonacci_numbers.insert(i, x)
+    return fibonacci_numbers
 
 
-# print(findFibonacci(12))
+# print(find_fibonacci(12))
 
 # let 'nums' to be fibonacci numbers without first 2 elements
 
 
-def twoSum(self, nums, target):
+def two_sum(self, nums, target):
     # First 12 numbers of fibonacci
-    x = findFibonacci(12)
+    x = find_fibonacci(12)
 
     #  Removed first 2 element bcz of that 'exactly one solution' part,
     # otherwise there would be '0' and two '1', this would lead to unwanted
@@ -50,4 +50,4 @@ def twoSum(self, nums, target):
     print(self)
 
 
-twoSum([], [], 36)
+two_sum([], [], 36)
