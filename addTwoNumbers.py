@@ -53,7 +53,8 @@ def addTwoNumbers(l1, l2):
         if index == 0 and self[index] > 9:
             self.insert(0,1)
             self[index] = self[index] % 10
-
+#elde var 1 ilk satırda olunca, sonucun başına bir hane daha eklemesi gerekiyor.
+#tersten yazma eklenecek(ya da ona göre düzenlenecek)
         if index == -1:
             break
 
