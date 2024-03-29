@@ -46,7 +46,7 @@ def twoSum(self, nums, target):
                 self.append(i)
                 self.append(j)
                 break
-
+    self.sort(reverse=True)
     print(self)
 
 
